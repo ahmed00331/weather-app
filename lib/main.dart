@@ -5,8 +5,6 @@ import '../src/app.dart';
 import '../src/core/utils/app_state_notifier.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-
   runApp(
     ChangeNotifierProvider<AppStateNotifier>(
       create: (_) => AppStateNotifier(),

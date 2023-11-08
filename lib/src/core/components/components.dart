@@ -114,7 +114,7 @@ void showToast({required String message, required ToastStates toastStates}) =>
         fontSize: 16.0);
 
 // ignore: constant_identifier_names
-enum ToastStates { SUCCESS, EROOR, WARNING }
+enum ToastStates { SUCCESS, ERROR, WARNING }
 
 Color chooseToastColor(ToastStates states) {
   Color color;
@@ -122,7 +122,7 @@ Color chooseToastColor(ToastStates states) {
     case ToastStates.SUCCESS:
       color = Colors.green;
       break;
-    case ToastStates.EROOR:
+    case ToastStates.ERROR:
       color = Colors.red;
       break;
     case ToastStates.WARNING:

@@ -100,15 +100,16 @@ class CurrentWeather extends StatelessWidget {
       child: Stack(
         children: [
           Positioned(
-            top: -_size.width * 0.23,
-            right: -_size.width * 0.35,
+            top: -_size.width * 0.10,
+            right: -_size.width * 0.05,
             child: Image.asset(
               ImageAssets.getAsset(weather.current.weather.first.icon),
-              height: _size.height * 0.45,
+              height: _size.height * 0.50,
+              width: _size.width * 0.90,
             ),
           ),
           Container(
-            width: _size.width * 0.55,
+            width: _size.width * 0.60,
             padding: EdgeInsets.symmetric(
                 horizontal: _size.width * 0.08, vertical: _size.height * 0.07),
             child: Column(
